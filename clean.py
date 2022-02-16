@@ -1,4 +1,4 @@
-len(houses)
+n = len(houses)
 
 price = []
 postcode = []
@@ -6,13 +6,11 @@ size = []
 kamers = []
 year = []
 
-houses1 = houses[0:10]
-
 i = 0
 
-while i <= len(houses1) - 1:
+while i <= n-1:
 
-    h = houses1[i]
+    h = houses[i]
 
     pr = h.find("div", {"class": "listing-search-item__price"}).text
     pr = pr.replace(" ", "")
@@ -41,3 +39,8 @@ while i <= len(houses1) - 1:
 
     i += 1
 
+data = {'price': price, 'postcode': postcode, 'size': size, 'kamers': kamers, 'year': year}
+df = pd.DataFrame(data)
+df
+
+df.to_csv("houses.csv", index=False)
