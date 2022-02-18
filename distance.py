@@ -11,7 +11,7 @@ from geopy.distance import geodesic
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
-df = pd.read_csv("data.csv")
+df = pd.read_csv("data/data.csv")
 
 df['latitude'] = 0
 df['longitude'] = 0

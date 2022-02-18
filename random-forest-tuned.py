@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.model_selection import KFold
 from sklearn.ensemble import RandomForestRegressor
 
-df = pd.read_csv("data2.csv")
+df = pd.read_csv("data/data2.csv")
 
 target = np.array(df['price'])
 features = df.drop(['postcode', 'year', 'latitude', 'longitude'], axis=1)
@@ -47,3 +47,4 @@ for train_index, test_index in kf.split(features):
 
 average_accuracy = np.mean(accuracies)
 print('Average accuracy:', average_accuracy)
+
