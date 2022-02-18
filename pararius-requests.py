@@ -1,12 +1,7 @@
-import pandas as pd
-import itertools
 from bs4 import BeautifulSoup
-import requests
 from requests import get
 import time
-from random import seed
 from random import random
-from random import randint
 
 url = 'https://www.pararius.nl/koopwoningen/amsterdam?ac='
 

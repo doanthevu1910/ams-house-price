@@ -19,7 +19,7 @@ df['distance1'] = 0
 df['distance2'] = 0
 
 geocoder = Nominatim(user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36')
-geocode = RateLimiter(geocoder.geocode, min_delay_seconds = 1, return_value_on_exception = None)
+geocode = RateLimiter(geocoder.geocode, min_delay_seconds=1, return_value_on_exception=None)
 # add 1 second between calls
 
 point1 = (52.3791, 4.9003) #centraal
