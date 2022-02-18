@@ -1,22 +1,47 @@
 from googleplaces import GooglePlaces, types, lang
 import numpy as np
+import pandas as pd
 
-google_places = GooglePlaces(api_key="AIzaSyAoqfPlFnCtV5IeXSL_4s7ry0V1HQPGgD8")
+api_key = 'AIzaSyAoqfPlFnCtV5IeXSL_4s7ry0V1HQPGgD8'
+df = pd.read_csv('data.csv')
 
-point1 = (52.3791, 4.9003) #centraal
+df['nearby rating'] = 0
+
+df.head()
+
+lat = df['latitude'][0]
+lng = df['longitude'][0]
+
+google_places = GooglePlaces(api_key=api_key)
 
 query_result = google_places.nearby_search(
-        lat_lng={'lat': point1[0], 'lng': point1[1]},
+        lat_lng={'lat': lat, 'lng': lng},
         radius=1000,
         types=[types.TYPE_FOOD])
 
-len(query_result.places)
+count = 0
 
-place = query_result.places[1]
+place_rating = []
 
-place.get_details()
-reviews = place.details['reviews']
+while count <= len(query_result.places) - 1:
+        place = query_result.places[count]
+        try:
+                place.get_details()
+                reviews = place.details['reviews']
 
-len(reviews)
+                score = []
+                i = 0
 
-reviews[0]['rating']
+                while i <= len(reviews) - 1:
+                        score.append(reviews[i]['rating'])
+                        i += 1
+
+                place_rating.append(np.average(score))
+
+        except:
+                pass
+
+        count += 1
+        print(count)
+
+np.average(place_rating)
