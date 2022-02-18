@@ -3,7 +3,7 @@ import pandas as pd
 
 df = pd.read_csv("data.csv")
 
-gmaps.configure(api_key='AIzaSyCzzXQDrgXt-H_IeMlvl8s26bcm9vX_uqM')
+gmaps.configure(api_key='api_key')
 
 fig = gmaps.figure()
 heatmap_layer = gmaps.heatmap_layer(
