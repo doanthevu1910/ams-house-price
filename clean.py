@@ -43,4 +43,4 @@ data = {'price': price, 'postcode': postcode, 'size': size, 'kamers': kamers, 'y
 df = pd.DataFrame(data)
 df
 
-df.to_csv("houses.csv", index=False)
+df.to_csv("data.csv", index=False)

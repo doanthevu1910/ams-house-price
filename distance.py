@@ -11,7 +11,7 @@ from geopy.distance import geodesic
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
-df = pd.read_csv("houses.csv")
+df = pd.read_csv("data.csv")
 
 df['latitude'] = 0
 df['longitude'] = 0
@@ -46,4 +46,4 @@ while i <= int(len(df)) - 1:
 
 df['age'] = now.year - df['year']
 
-df.to_csv("data.csv", index=False)
+df.to_csv("data1.csv", index=False)

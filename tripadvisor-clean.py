@@ -9,7 +9,7 @@ import datetime
 now = datetime.datetime.now()
 from geopy.distance import geodesic
 
-data = pd.read_csv('TA_restaurants_curated.csv')
+data = pd.read_csv('tripadvisor_data.csv')
 
 data = data[['Name', 'City', 'Rating', 'Price Range']]
 

@@ -1,4 +1,3 @@
-# import packages
 import pandas as pd
 import itertools
 from bs4 import BeautifulSoup
@@ -9,15 +8,13 @@ from random import seed
 from random import random
 from random import randint
 
-# url format
 url = 'https://www.pararius.nl/koopwoningen/amsterdam?ac='
-# initialize houses list
+
 houses = []
-# initialize count at 1
-count = 1
 
 headers = ({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36'})
 
+count = 1
 # while loop that runs 29 times (29 pages)
 while count <= 29:
     # initialize new_count at 0
