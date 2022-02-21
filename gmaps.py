@@ -20,3 +20,5 @@ fig.add_layer(heatmap_layer)
 fig
 
 embed_minimal_html('graphs/export.html', views=[fig])
+
+#open html and save image, delete html afterwards
