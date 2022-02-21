@@ -13,7 +13,7 @@ heatmap_layer = gmaps.heatmap_layer(
   df[['latitude', 'longitude']],
   weights=df['price'],
   max_intensity=1000000,
-  point_radius=6.0
+  point_radius=5.0
 )
 
 fig.add_layer(heatmap_layer)
