@@ -19,4 +19,4 @@ heatmap_layer = gmaps.heatmap_layer(
 fig.add_layer(heatmap_layer)
 fig
 
-embed_minimal_html('export.html', views=[fig])
+embed_minimal_html('graphs/export.html', views=[fig])
