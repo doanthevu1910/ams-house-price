@@ -1,5 +1,5 @@
 # ams-real-estate
-Predict house prices in Amsterdam based on data scraped from Pararius (compliant to ToS) and Google Places.
+Predict house price in Amsterdam based on data scraped from Pararius (compliant to ToS) and Google Places.
 
 ![gmaps heatmap](graphs/export.png)
 
@@ -37,7 +37,7 @@ feature-importance-plot.py: Compare importance of features
 - Multiple linear regression could perform better for cases where distance to multiple hotspots is included
 
 # Further research
-- Rent prices instead of house price (more data available)
+- Rent price instead of house price (more data available)
 - Other cities of the Netherlands
 - Factor in more parameters (altitude, condition)
 - Try to update the model in real time (AWS)
