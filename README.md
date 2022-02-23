@@ -1,6 +1,6 @@
 # ams-real-estate
 Predict house prices in Amsterdam based on data scraped from Pararius (compliant to ToS) and Google Places API.
-# Getting data
+# Data
 pararius-requests.py: Scrape Amsterdam house listings from Pararius
 
 clean.py: Clean data to get price, postcode, size, number of bedrooms, and year constructed/last renovated
