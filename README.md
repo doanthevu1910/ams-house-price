@@ -10,10 +10,10 @@ clean.py: Clean data to get price, postcode, size, number of bedrooms, and year 
 
 distance.py: Convert postcode into coordinates, then calculate the distance from each house to Centraal Station (distance1) and Zuid Station (distance2)
 
-google-maps-rating.py: For each house, get 20 nearest restaurants/bars, and 5 most recent ratings, then calculate the average rating (nearby rating)
+google-maps-rating.py: For each house, get 20 nearest restaurants/bars within a 1km radius, and 5 most recent ratings of each, then calculate the average rating (nearby rating)
 
 # EDA
-gmaps.py: Draw a heatmap based on price
+gmaps.py: Draw heatmap based on price
 
 graphs.py: Draw scatter plots
 
