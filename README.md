@@ -1,5 +1,8 @@
 # ams-real-estate
 Predict house prices in Amsterdam based on data scraped from Pararius (compliant to ToS) and Google Places API.
+
+![gmaps heatmap](graphs/export.png)
+
 # Data
 pararius-requests.py: Scrape Amsterdam house listings from Pararius
 
@@ -28,3 +31,4 @@ prediction.py: Try predicting the price
 decision-tree.py: Visualize decision trees
 
 feature-importance-plot.py: Compare importance of features
+
