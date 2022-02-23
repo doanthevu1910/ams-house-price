@@ -41,3 +41,10 @@ feature-importance-plot.py: Compare importance of features
 - Other cities of the Netherlands
 - Factor in more parameters (altitude, condition)
 - Try to update the model in real time (AWS)
+
+# References
+
+[gmaps](https://github.com/pbugnion/gmaps)
+
+[python-google-places](https://github.com/slimkrazy/python-google-places)
+
