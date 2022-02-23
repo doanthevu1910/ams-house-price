@@ -36,7 +36,7 @@ feature-importance-plot.py: Compare importance of features
 - Lack of data results in low accuracy
 - Multiple linear regression could perform better for cases where distance to multiple hotspots is included
 
-#Further research
+# Further research
 - Rent prices instead of house price (more data available)
 - Other cities of the Netherlands
 - Factor in more parameters (altitude)
