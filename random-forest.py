@@ -37,10 +37,9 @@ for train_index, test_index in kf.split(features):
 
     mape = 100 * (errors / target_test)
     accuracy = 100 - np.mean(mape)
-    print('Accuracy:', round(accuracy, 2), '%.')
+    print('Accuracy:', round(accuracy, 2), '%')
 
     accuracies.append(accuracy)
 
 average_accuracy = np.mean(accuracies)
 print('Average accuracy:', average_accuracy)
-
