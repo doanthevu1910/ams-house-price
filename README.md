@@ -4,11 +4,11 @@ Predict house prices in Amsterdam based on data scraped from Pararius (compliant
 ![gmaps heatmap](graphs/export.png)
 
 # Data
-pararius-requests.py: Scrape Amsterdam house listings from Pararius
+pararius-requests.py: Scrape Amsterdam house listings from Pararius (870 listings in total)
 
 clean.py: Clean data to get price, postcode, size, number of bedrooms, and year constructed/last renovated
 
-distance.py: Convert the postcode into coordinates, then calculate the distance from each houses to the Centraal Station (distance1) and Zuid Station (distance2)
+distance.py: Convert postcode into coordinates, then calculate the distance from each house to Centraal Station (distance1) and Zuid Station (distance2)
 
 google-maps-rating.py: For each house, get 20 nearest restaurants/bars, and 5 most recent ratings, then calculate the average rating (nearby rating)
 
@@ -32,4 +32,12 @@ decision-tree.py: Visualize decision trees
 
 feature-importance-plot.py: Compare importance of features
 
-# 
+# Remarks
+- Lack of data results in low accuracy
+- Multiple linear regression could perform better for cases where distance to multiple hotspots is included
+
+#Further research
+- Rent prices instead of house price (more data available)
+- Other cities of the Netherlands
+- Factor in more parameters (altitude)
+- Try to update the model in real time (AWS)
