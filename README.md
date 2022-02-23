@@ -39,5 +39,5 @@ feature-importance-plot.py: Compare importance of features
 # Further research
 - Rent prices instead of house price (more data available)
 - Other cities of the Netherlands
-- Factor in more parameters (altitude)
+- Factor in more parameters (altitude, condition)
 - Try to update the model in real time (AWS)
