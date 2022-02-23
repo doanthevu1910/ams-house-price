@@ -13,7 +13,7 @@ distance.py: Convert postcode into coordinates, then calculate the distance from
 google-maps-rating.py: For each house, get 20 nearest restaurants/bars, and 5 most recent ratings, then calculate the average rating (nearby rating)
 
 # EDA
-gmaps.py: Draw a heatmap based on price
+gmaps.py: Draw heatmap based on price
 
 graphs.py: Draw scatter plots
 
