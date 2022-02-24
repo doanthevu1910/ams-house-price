@@ -1,4 +1,4 @@
-# ams-real-estate
+# ams-house-price
 Predict house price in Amsterdam based on data scraped from Pararius (compliant to ToS) and Google Places.
 
 ![gmaps heatmap](graphs/export.png)
