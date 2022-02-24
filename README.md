@@ -33,7 +33,8 @@ decision-tree.py: Visualize decision trees
 feature-importance-plot.py: Compare importance of features
 
 # Remarks
-- Lack of data results in low accuracy
+- Size seems to be the biggest influence on price
+- Lack of data affects the model accuracy
 - Multiple linear regression could perform better for cases where distance to multiple hotspots is included
 
 # Further research
