@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("data/data2.csv")
+df = pd.read_csv("../data/data2.csv")
 
 plt.figure()
 plt.scatter(df['size'], df['price'], s=20, c='orange', edgecolors='orange', label = 'Size')

@@ -2,7 +2,7 @@ import gmaps
 import pandas as pd
 from ipywidgets.embed import embed_minimal_html
 
-df = pd.read_csv('data/data2.csv')
+df = pd.read_csv('../data/data2.csv')
 
 df
 

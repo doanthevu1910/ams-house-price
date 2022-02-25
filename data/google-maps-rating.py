@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 api_key = 'AIzaSyAoqfPlFnCtV5IeXSL_4s7ry0V1HQPGgD8'
-df = pd.read_csv('data/data1.csv')
+df = pd.read_csv('data1.csv')
 
 df['nearby rating'] = 0
 
