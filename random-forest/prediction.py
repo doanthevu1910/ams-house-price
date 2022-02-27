@@ -13,8 +13,6 @@ newdata['kamers'] = 1
 newdata['size'] = 45
 newdata['nearby rating'] = 4.113475
 
-# only change the number values in the postcode
-# and string values after the _ for the rental agency
 point1 = (52.3791, 4.9003) #centraal
 point2 = (52.3382, 4.8732) #zuid
 
